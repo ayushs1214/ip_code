@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DOM Manipulation Example</title>
+</head>
+<body>
+    <h1>WELCOME TO DOM MANIPULATION</h1>
+  <div id="myDiv">
+    <!-- Content will be added here -->
+  </div>
+  <p id="demo"></p>
+  <p class="example"></p>
+   
+  <script>
+    //Append child
+    const divElement = document.getElementById('myDiv');
+    const newParagraph = document.createElement('p');
+    newParagraph.textContent = "This is a new paragraph added using JavaScript.";
+    divElement.appendChild(newParagraph);
+
+
+
+
+    //getElementByID
+    document.getElementById("demo").textContent = "Hello World ID!";
+    //getElementByClassName
+    document.getElementsByClassName("example")[0].textContent = "Hello World Class!";
+
+
+
+    //Remove child
+    const newParagraph2 = document.createElement('p');
+    newParagraph2.textContent = "This is a new paragraph to be deleted later";
+    divElement.appendChild(newParagraph2);
+    divElement.removeChild(newParagraph2);
+
+    //Replace child
+    const newParagraph3 = document.createElement('p');
+    newParagraph3.textContent = "This is a new paragraph to be replaced later";
+    divElement.appendChild(newParagraph3);
+    const newParagraph4 = document.createElement('p');
+    newParagraph4.textContent = "This is a replacement paragraph.";
+    divElement.replaceChild(newParagraph4, newParagraph3);
+
+
+
+    //Query selector
+    document.querySelector('#demo').style.color="red";
+    document.querySelector('#demo').style.fontStyle="italic";
+    document.querySelectorAll('.example')[0].style.backgroundColor="teal";
+
+
+
+
+
+ 
+  </script>
+</body>
+</html>

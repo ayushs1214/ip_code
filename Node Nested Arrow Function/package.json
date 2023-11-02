@@ -1,0 +1,16 @@
+{
+  "name": "NestedArrowFunction",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node": "^21.1.0",
+    "scripts": "^0.1.0"
+  }
+}

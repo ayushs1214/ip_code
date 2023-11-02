@@ -1,0 +1,12 @@
+{
+  "name": "user-client",
+  "version": "1.0.0",
+  "description": "",
+  "main": "user-client.js",
+  "scripts": {
+    "start": "node user-client.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
